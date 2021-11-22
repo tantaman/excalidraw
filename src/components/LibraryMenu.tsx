@@ -1,3 +1,4 @@
+import React from "react";
 import { useRef, useState, useEffect, useCallback, RefObject } from "react";
 import Library from "../data/library";
 import { t } from "../i18n";

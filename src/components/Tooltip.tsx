@@ -1,3 +1,4 @@
+import React from "react";
 import "./Tooltip.css";
 
 import React, { useEffect } from "react";

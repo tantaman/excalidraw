@@ -1,3 +1,4 @@
+import React from "react";
 import throttle from "lodash.throttle";
 import { PureComponent } from "react";
 import { ExcalidrawImperativeAPI } from "../../types";

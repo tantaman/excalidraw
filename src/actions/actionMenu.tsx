@@ -1,3 +1,4 @@
+import React from "react";
 import { menu, palette } from "../components/icons";
 import { ToolButton } from "../components/ToolButton";
 import { t } from "../i18n";

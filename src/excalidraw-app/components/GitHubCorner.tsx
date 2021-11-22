@@ -1,3 +1,4 @@
+import React from "react";
 import oc from "open-color";
 import React from "react";
 import { THEME } from "../../constants";

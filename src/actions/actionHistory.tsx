@@ -1,3 +1,4 @@
+import React from "react";
 import { Action, ActionResult } from "./types";
 import { undo, redo } from "../components/icons";
 import { ToolButton } from "../components/ToolButton";

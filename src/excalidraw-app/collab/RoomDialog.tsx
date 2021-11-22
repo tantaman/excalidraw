@@ -1,3 +1,4 @@
+import React from "react";
 import React, { useRef } from "react";
 import { copyTextToSystemClipboard } from "../../clipboard";
 import { Dialog } from "../../components/Dialog";

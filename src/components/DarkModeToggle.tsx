@@ -1,3 +1,4 @@
+import React from "react";
 import "./ToolIcon.css";
 
 import { t } from "../i18n";

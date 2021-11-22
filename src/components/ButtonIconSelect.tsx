@@ -1,3 +1,4 @@
+import React from "react";
 import clsx from "clsx";
 
 // TODO: It might be "clever" to add option.icon to the existing component <ButtonSelect />

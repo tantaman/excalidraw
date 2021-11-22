@@ -1,3 +1,4 @@
+import React from "react";
 import { questionCircle } from "../components/icons";
 
 type HelpIconProps = {

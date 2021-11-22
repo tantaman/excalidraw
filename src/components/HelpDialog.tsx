@@ -1,4 +1,5 @@
 import React from "react";
+import React from "react";
 import { t } from "../i18n";
 import { isDarwin, isWindows } from "../keys";
 import { Dialog } from "./Dialog";

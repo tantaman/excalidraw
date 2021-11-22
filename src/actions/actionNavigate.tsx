@@ -1,3 +1,4 @@
+import React from "react";
 import { getClientColors, getClientInitials } from "../clients";
 import { Avatar } from "../components/Avatar";
 import { centerScrollOn } from "../scene/scroll";

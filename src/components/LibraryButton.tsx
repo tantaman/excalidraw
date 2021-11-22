@@ -1,4 +1,5 @@
 import React from "react";
+import React from "react";
 import clsx from "clsx";
 import { t } from "../i18n";
 import { AppState } from "../types";

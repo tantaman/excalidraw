@@ -1,3 +1,4 @@
+import React from "react";
 import "./FixedSideContainer.css";
 
 import React from "react";

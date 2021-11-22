@@ -1,4 +1,5 @@
 import React from "react";
+import React from "react";
 import { getCommonBounds } from "../element/bounds";
 import { NonDeletedExcalidrawElement } from "../element/types";
 import { t } from "../i18n";

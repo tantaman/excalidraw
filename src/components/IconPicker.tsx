@@ -1,4 +1,5 @@
 import React from "react";
+import React from "react";
 import { Popover } from "./Popover";
 
 import "./IconPicker.css";

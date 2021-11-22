@@ -1,3 +1,4 @@
+import React from "react";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { trackEvent } from "../analytics";

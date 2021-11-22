@@ -1,3 +1,4 @@
+import React from "react";
 import React, { useEffect, useRef, useState } from "react";
 import { render, unmountComponentAtNode } from "react-dom";
 import { ActionsManagerInterface } from "../actions/types";

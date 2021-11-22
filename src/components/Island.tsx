@@ -1,3 +1,4 @@
+import React from "react";
 import "./Island.css";
 
 import React from "react";

@@ -1,3 +1,4 @@
+import React from "react";
 import { CODES, KEYS } from "../keys";
 import { register } from "./register";
 import { trackEvent } from "../analytics";

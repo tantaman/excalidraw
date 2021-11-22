@@ -1,4 +1,5 @@
 import React from "react";
+import React from "react";
 import { ActionManager } from "../actions/manager";
 import { getNonDeletedElements } from "../element";
 import { ExcalidrawElement, PointerType } from "../element/types";

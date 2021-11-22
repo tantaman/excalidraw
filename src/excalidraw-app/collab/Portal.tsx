@@ -1,3 +1,4 @@
+import React from "react";
 import { SocketUpdateData, SocketUpdateDataSource } from "../data";
 
 import CollabWrapper from "./CollabWrapper";

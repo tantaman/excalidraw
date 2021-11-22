@@ -1,3 +1,4 @@
+import React from "react";
 import "./Avatar.css";
 
 import React from "react";

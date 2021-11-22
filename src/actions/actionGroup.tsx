@@ -1,3 +1,4 @@
+import React from "react";
 import { CODES, KEYS } from "../keys";
 import { t } from "../i18n";
 import { getShortcutKey } from "../utils";

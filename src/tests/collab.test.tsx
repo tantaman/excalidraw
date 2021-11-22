@@ -1,3 +1,4 @@
+import React from "react";
 import { render, updateSceneData, waitFor } from "./test-utils";
 import ExcalidrawApp from "../excalidraw-app";
 import { API } from "./helpers/api";

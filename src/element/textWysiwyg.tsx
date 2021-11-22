@@ -1,3 +1,4 @@
+import React from "react";
 import { CODES, KEYS } from "../keys";
 import { isWritableElement, getFontString } from "../utils";
 import Scene from "../scene/Scene";

@@ -1,3 +1,4 @@
+import React from "react";
 import { ColorPicker } from "../components/ColorPicker";
 import { zoomIn, zoomOut } from "../components/icons";
 import { ToolButton } from "../components/ToolButton";

@@ -1,3 +1,4 @@
+import React from "react";
 import { register } from "./register";
 import { CODES, KEYS } from "../keys";
 

@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import { t } from "../i18n";
 import { useIsMobile } from "./App";

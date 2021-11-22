@@ -1,3 +1,4 @@
+import React from "react";
 import "./Modal.css";
 
 import React, { useState, useLayoutEffect, useRef } from "react";
