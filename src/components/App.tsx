@@ -138,6 +138,7 @@ import {
   InitializedExcalidrawImageElement,
   ExcalidrawImageElement,
   FileId,
+  PointerType,
 } from "../element/types";
 import { getCenter, getDistance } from "../gesture";
 import {
@@ -176,7 +177,7 @@ import {
 import Scene from "../scene/Scene";
 import { SceneState, ScrollBars } from "../scene/types";
 import { getNewZoom } from "../scene/zoom";
-import { findShapeByKey } from "../shapes";
+import { findShapeByKey, Shapes } from "../shapes";
 import {
   AppClassProperties,
   AppProps,
@@ -321,6 +322,8 @@ class App extends React.Component<AppProps, AppState> {
       const api: ExcalidrawImperativeAPI = {
         ready: true,
         readyPromise,
+        switchShape: this.switchShape,
+        setAppState: this.setAppState,
         updateScene: this.updateScene,
         addFiles: this.addFiles,
         resetScene: this.resetScene,
@@ -363,6 +366,18 @@ class App extends React.Component<AppProps, AppState> {
 
     this.actionManager.registerAction(createUndoAction(this.history));
     this.actionManager.registerAction(createRedoAction(this.history));
+  }
+
+  public switchShape(value: Shapes, pointerType: PointerType) {
+    this.setAppState({
+      elementType: value,
+      multiElement: null,
+      selectedElementIds: {},
+    });
+    setCursorForShape(this.canvas, value);
+    if (value === "image") {
+      // onImageAction({ pointerType });
+    }
   }
 
   private renderCanvas() {
@@ -447,6 +462,44 @@ class App extends React.Component<AppProps, AppState> {
           value={this.excalidrawContainerValue}
         >
           <IsMobileContext.Provider value={this.isMobile}>
+            <LayerUI
+              canvas={this.canvas}
+              appState={this.state}
+              files={this.files}
+              setAppState={this.setAppState}
+              actionManager={this.actionManager}
+              elements={this.scene.getElements()}
+              onCollabButtonClick={onCollabButtonClick}
+              onLockToggle={this.toggleLock}
+              onInsertElements={(elements) =>
+                this.addElementsFromPasteOrLibrary({
+                  elements,
+                  position: "center",
+                  files: null,
+                })
+              }
+              zenModeEnabled={zenModeEnabled}
+              toggleZenMode={this.toggleZenMode}
+              langCode={getLanguage().code}
+              isCollaborating={this.props.isCollaborating || false}
+              renderTopRightUI={renderTopRightUI}
+              renderCustomFooter={renderFooter}
+              viewModeEnabled={viewModeEnabled}
+              showExitZenModeBtn={
+                typeof this.props?.zenModeEnabled === "undefined" &&
+                zenModeEnabled
+              }
+              showThemeBtn={
+                typeof this.props?.theme === "undefined" &&
+                this.props.UIOptions.canvasActions.theme
+              }
+              libraryReturnUrl={this.props.libraryReturnUrl}
+              UIOptions={this.props.UIOptions}
+              focusContainer={this.focusContainer}
+              library={this.library}
+              id={this.id}
+              onImageAction={this.onImageAction}
+            />
             <div className="excalidraw-textEditorContainer" />
             <div className="excalidraw-contextMenuContainer" />
             {this.state.showStats && (

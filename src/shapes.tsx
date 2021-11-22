@@ -1,6 +1,17 @@
 import React from "react";
 import { KEYS } from "./keys";
 
+export type Shapes =
+  | "selection"
+  | "rectangle"
+  | "diamond"
+  | "ellipse"
+  | "arrow"
+  | "line"
+  | "freedraw"
+  | "text"
+  | "image";
+
 // We inline font-awesome icons in order to save on js size rather than including the font awesome react library
 export const SHAPES = [
   {

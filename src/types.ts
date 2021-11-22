@@ -377,6 +377,7 @@ export type PointerDownState = Readonly<{
 
 export type ExcalidrawImperativeAPI = {
   updateScene: InstanceType<typeof App>["updateScene"];
+  setAppState: (obj: any) => void;
   resetScene: InstanceType<typeof App>["resetScene"];
   getSceneElementsIncludingDeleted: InstanceType<
     typeof App
