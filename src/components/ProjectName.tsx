@@ -1,4 +1,3 @@
-import React from "react";
 import "./TextInput.css";
 
 import React, { useState } from "react";

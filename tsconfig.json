@@ -16,6 +16,5 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
-  "exclude": ["src/packages/excalidraw/types"]
+  "exclude": ["src", "src/packages/excalidraw/types"]
 }

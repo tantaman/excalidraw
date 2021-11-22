@@ -1,4 +1,3 @@
-import React from "react";
 import oc from "open-color";
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { trackEvent } from "../analytics";

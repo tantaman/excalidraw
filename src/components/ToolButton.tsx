@@ -1,4 +1,3 @@
-import React from "react";
 import "./ToolIcon.css";
 
 import React, { useEffect, useRef, useState } from "react";

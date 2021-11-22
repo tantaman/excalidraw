@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useEffect, forwardRef } from "react";
 import "./publicPath";
 

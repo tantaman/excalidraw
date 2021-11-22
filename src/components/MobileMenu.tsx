@@ -1,5 +1,4 @@
 import React from "react";
-import React from "react";
 import { AppState } from "../types";
 import { ActionManager } from "../actions/manager";
 import { t } from "../i18n";

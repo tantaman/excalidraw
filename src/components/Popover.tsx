@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useLayoutEffect, useRef, useEffect } from "react";
 import "./Popover.css";
 import { unstable_batchedUpdates } from "react-dom";
