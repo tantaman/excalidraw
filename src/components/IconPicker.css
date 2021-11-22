@@ -1,0 +1,131 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .picker-container {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 0.25rem;
+}
+.excalidraw .picker {
+  background: var(--popup-bg-color);
+  border: 0 solid rgba(255, 255, 255, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 1px 4px;
+  border-radius: 4px;
+  position: absolute;
+}
+.excalidraw .picker-container button,
+.excalidraw .picker button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.excalidraw .picker-container button:focus,
+.excalidraw .picker button:focus {
+  outline: transparent;
+  background-color: var(--button-gray-2);
+}
+.excalidraw .picker-container button:focus svg,
+.excalidraw .picker button:focus svg {
+  opacity: 1;
+}
+.excalidraw .picker-container button:hover,
+.excalidraw .picker button:hover {
+  background-color: var(--button-gray-2);
+}
+.excalidraw .picker-container button:active,
+.excalidraw .picker button:active {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .picker-container button:disabled,
+.excalidraw .picker button:disabled {
+  cursor: not-allowed;
+}
+.excalidraw .picker-container button svg,
+.excalidraw .picker button svg {
+  margin: 0;
+  width: 36px;
+  height: 18px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.excalidraw .picker button {
+  padding: 0.25rem 0.28rem 0.35rem 0.25rem;
+}
+.excalidraw .picker-triangle {
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -10px;
+  z-index: 10;
+}
+:root[dir="ltr"] .excalidraw .picker-triangle {
+  left: 12px;
+}
+:root[dir="rtl"] .excalidraw .picker-triangle {
+  right: 12px;
+}
+.excalidraw .picker-triangle:before {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 9px 10px;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1);
+  top: -1px;
+}
+.excalidraw .picker-triangle:after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 9px 10px;
+  border-color: transparent transparent var(--popup-bg-color);
+}
+.excalidraw .picker-content {
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 0.5rem;
+  border-radius: 4px;
+}
+:root[dir="rtl"] .excalidraw .picker-content {
+  padding: 0.4rem;
+}
+.excalidraw .picker-keybinding {
+  position: absolute;
+  bottom: 2px;
+  font-size: 0.7em;
+  color: var(--keybinding-color);
+}
+:root[dir="ltr"] .excalidraw .picker-keybinding {
+  right: 2px;
+}
+:root[dir="rtl"] .excalidraw .picker-keybinding {
+  left: 2px;
+}
+.excalidraw--mobile.excalidraw .picker-keybinding {
+  display: none;
+}
+
+.excalidraw .picker-type-canvasBackground .picker-keybinding {
+  color: #aaa;
+}
+.excalidraw .picker-type-elementBackground .picker-keybinding {
+  color: #ffffff;
+}
+.excalidraw .picker-swatch[aria-label="transparent"] .picker-keybinding {
+  color: #aaa;
+}
+.excalidraw .picker-type-elementStroke .picker-keybinding {
+  color: #d4d4d4;
+}
+.excalidraw.theme--dark .picker-type-elementBackground .picker-keybinding {
+  color: #000000;
+}
+.excalidraw.theme--dark
+  .picker-swatch[aria-label="transparent"]
+  .picker-keybinding {
+  color: #000000;
+}
+
+/*# sourceMappingURL=IconPicker.css.map */

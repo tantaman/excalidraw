@@ -1,0 +1,67 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .RoomDialog-linkContainer {
+  display: flex;
+  margin: 1.5em 0;
+}
+.excalidraw input.RoomDialog-link {
+  color: var(--text-primary-color);
+  min-width: 0;
+  flex: 1 1 auto;
+  margin-inline-start: 1em;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  border-radius: var(--space-factor);
+  background-color: var(--button-gray-1);
+}
+.excalidraw .RoomDialog-emoji {
+  font-family: sans-serif;
+}
+.excalidraw .RoomDialog-usernameContainer {
+  display: flex;
+  margin: 1.5em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.excalidraw--mobile.excalidraw .RoomDialog-usernameContainer {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.excalidraw--mobile.excalidraw .RoomDialog-usernameLabel {
+  font-weight: bold;
+}
+
+.excalidraw .RoomDialog-username {
+  background-color: var(--input-bg-color);
+  border-color: var(--input-border-color);
+  appearance: none;
+  min-width: 0;
+  flex: 1 1 auto;
+  margin-inline-start: 1em;
+  font-size: 1em;
+}
+.excalidraw--mobile.excalidraw .RoomDialog-username {
+  margin-top: 0.5em;
+  margin-inline-start: 0;
+}
+
+.excalidraw .RoomDialog-sessionStartButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+.excalidraw .Modal .RoomDialog-stopSession {
+  background-color: var(--button-destructive-bg-color);
+}
+.excalidraw .Modal .RoomDialog-stopSession .ToolIcon__label,
+.excalidraw .Modal .RoomDialog-stopSession .ToolIcon__icon svg {
+  color: var(--button-destructive-color);
+}
+
+/*# sourceMappingURL=RoomDialog.css.map */

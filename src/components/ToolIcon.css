@@ -1,0 +1,219 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .ToolIcon {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: var(--space-factor);
+  user-select: none;
+  background-color: var(--button-gray-1);
+}
+.excalidraw .ToolIcon:hover {
+  background-color: var(--button-gray-2);
+}
+.excalidraw .ToolIcon:active {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .ToolIcon--plain {
+  background-color: transparent;
+}
+.excalidraw .ToolIcon--plain .ToolIcon__icon {
+  width: 2rem;
+  height: 2rem;
+}
+.excalidraw .ToolIcon__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--icon-fill-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--space-factor);
+}
+.excalidraw .ToolIcon__icon svg {
+  position: relative;
+  height: 1em;
+  fill: var(--icon-fill-color);
+  color: var(--icon-fill-color);
+}
+.excalidraw .ToolIcon__icon + .ToolIcon__label {
+  margin-inline-start: 0;
+}
+.excalidraw .ToolIcon__label {
+  display: flex;
+  align-items: center;
+  color: var(--icon-fill-color);
+  font-family: var(--ui-font);
+  margin: 0 0.8em;
+  text-overflow: ellipsis;
+}
+.excalidraw .ToolIcon__label .Spinner {
+  margin-left: 0.6em;
+}
+.excalidraw .ToolIcon_size_small .ToolIcon__icon {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.8em;
+}
+.excalidraw .excalidraw .ToolIcon_type_button,
+.excalidraw .Modal .ToolIcon_type_button,
+.excalidraw .ToolIcon_type_button {
+  padding: 0;
+  border: none;
+  margin: 0;
+  font-size: inherit;
+}
+.excalidraw .excalidraw .ToolIcon_type_button:focus,
+.excalidraw .Modal .ToolIcon_type_button:focus,
+.excalidraw .ToolIcon_type_button:focus {
+  box-shadow: 0 0 0 2px var(--focus-highlight-color);
+}
+.excalidraw .excalidraw .ToolIcon_type_button.ToolIcon--selected,
+.excalidraw .Modal .ToolIcon_type_button.ToolIcon--selected,
+.excalidraw .ToolIcon_type_button.ToolIcon--selected {
+  background-color: var(--button-gray-2);
+}
+.excalidraw .excalidraw .ToolIcon_type_button.ToolIcon--selected:active,
+.excalidraw .Modal .ToolIcon_type_button.ToolIcon--selected:active,
+.excalidraw .ToolIcon_type_button.ToolIcon--selected:active {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .excalidraw .ToolIcon_type_button:hover,
+.excalidraw .Modal .ToolIcon_type_button:hover,
+.excalidraw .ToolIcon_type_button:hover {
+  background-color: var(--button-gray-2);
+}
+.excalidraw .excalidraw .ToolIcon_type_button:active,
+.excalidraw .Modal .ToolIcon_type_button:active,
+.excalidraw .ToolIcon_type_button:active {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .excalidraw .ToolIcon_type_button--show,
+.excalidraw .Modal .ToolIcon_type_button--show,
+.excalidraw .ToolIcon_type_button--show {
+  visibility: visible;
+}
+.excalidraw .excalidraw .ToolIcon_type_button--hide,
+.excalidraw .Modal .ToolIcon_type_button--hide,
+.excalidraw .ToolIcon_type_button--hide {
+  visibility: hidden;
+}
+.excalidraw .ToolIcon_type_radio,
+.excalidraw .ToolIcon_type_checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.excalidraw
+  .ToolIcon_type_radio:not(.ToolIcon_toggle_opaque):checked
+  + .ToolIcon__icon,
+.excalidraw
+  .ToolIcon_type_checkbox:not(.ToolIcon_toggle_opaque):checked
+  + .ToolIcon__icon {
+  background-color: var(--button-gray-2);
+}
+.excalidraw
+  .ToolIcon_type_radio:not(.ToolIcon_toggle_opaque):checked
+  + .ToolIcon__icon:active,
+.excalidraw
+  .ToolIcon_type_checkbox:not(.ToolIcon_toggle_opaque):checked
+  + .ToolIcon__icon:active {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .ToolIcon_type_radio:focus + .ToolIcon__icon,
+.excalidraw .ToolIcon_type_checkbox:focus + .ToolIcon__icon {
+  box-shadow: 0 0 0 2px var(--focus-highlight-color);
+}
+.excalidraw .ToolIcon_type_radio:active + .ToolIcon__icon,
+.excalidraw .ToolIcon_type_checkbox:active + .ToolIcon__icon {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .ToolIcon_type_floating {
+  background-color: transparent;
+}
+.excalidraw .ToolIcon_type_floating:hover {
+  background-color: transparent;
+}
+.excalidraw .ToolIcon_type_floating:active {
+  background-color: transparent;
+}
+.excalidraw .ToolIcon_type_floating:focus {
+  box-shadow: none;
+}
+.excalidraw .ToolIcon_type_floating .ToolIcon__icon {
+  background-color: var(--button-gray-1);
+  width: 2rem;
+  height: 2em;
+}
+.excalidraw .ToolIcon_type_floating .ToolIcon__icon:hover {
+  background-color: var(--button-gray-2);
+}
+.excalidraw .ToolIcon_type_floating .ToolIcon__icon:active {
+  background-color: var(--button-gray-3);
+}
+.excalidraw .ToolIcon.ToolIcon__lock {
+  margin-inline-end: var(--space-factor);
+}
+.excalidraw .ToolIcon.ToolIcon__lock.ToolIcon_type_floating {
+  margin-left: 0.1rem;
+}
+.excalidraw .ToolIcon__keybinding {
+  position: absolute;
+  bottom: 2px;
+  right: 3px;
+  font-size: 0.5em;
+  color: var(--keybinding-color);
+  font-family: var(--ui-font);
+  user-select: none;
+}
+@media (max-width: 425px) {
+  .excalidraw .Shape .ToolIcon__icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .excalidraw .Shape .ToolIcon__icon svg {
+    height: 0.8em;
+  }
+}
+@media (max-width: 760px) {
+  .excalidraw .ToolIcon.ToolIcon_type_floating {
+    display: inline-block;
+    position: absolute;
+    right: -8px;
+    margin-left: 0;
+    border-radius: 20px 0 0 20px;
+    z-index: 1;
+    background-color: var(--button-gray-1);
+  }
+  .excalidraw .ToolIcon.ToolIcon_type_floating:hover {
+    background-color: var(--button-gray-1);
+  }
+  .excalidraw .ToolIcon.ToolIcon_type_floating:active {
+    background-color: var(--button-gray-2);
+  }
+  .excalidraw .ToolIcon.ToolIcon_type_floating .ToolIcon__icon {
+    border-radius: inherit;
+  }
+  .excalidraw .ToolIcon.ToolIcon_type_floating svg {
+    position: static;
+  }
+  .excalidraw .ToolIcon.ToolIcon__library {
+    top: 100px;
+  }
+  .excalidraw .ToolIcon.ToolIcon__lock {
+    margin-inline-end: 0;
+    top: 60px;
+  }
+}
+:root[dir="ltr"] .excalidraw .unlocked-icon {
+  left: 2px;
+}
+:root[dir="rtl"] .excalidraw .unlocked-icon {
+  right: 2px;
+}
+
+/*# sourceMappingURL=ToolIcon.css.map */

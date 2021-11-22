@@ -1,0 +1,101 @@
+.excalidraw .layer-ui__wrapper {
+  z-index: var(--zIndex-layerUI);
+}
+.excalidraw .layer-ui__wrapper__top-right {
+  display: flex;
+}
+.excalidraw .layer-ui__wrapper__footer {
+  width: 100%;
+}
+.excalidraw .layer-ui__wrapper__footer-right {
+  z-index: 100;
+  display: flex;
+}
+.excalidraw .layer-ui__wrapper .zen-mode-transition {
+  transition: transform 0.5s ease-in-out;
+}
+:root[dir="ltr"]
+  .excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.transition-left {
+  transform: translate(-999px, 0);
+}
+:root[dir="ltr"]
+  .excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.transition-right {
+  transform: translate(999px, 0);
+}
+:root[dir="rtl"]
+  .excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.transition-left {
+  transform: translate(999px, 0);
+}
+:root[dir="rtl"]
+  .excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.transition-right {
+  transform: translate(-999px, 0);
+}
+:root[dir="ltr"]
+  .excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.layer-ui__wrapper__footer-left--transition-left {
+  transform: translate(-76px, 0);
+}
+:root[dir="rtl"]
+  .excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.layer-ui__wrapper__footer-left--transition-left {
+  transform: translate(76px, 0);
+}
+.excalidraw
+  .layer-ui__wrapper
+  .zen-mode-transition.layer-ui__wrapper__footer-left--transition-bottom {
+  transform: translate(0, 92px);
+}
+.excalidraw .layer-ui__wrapper .disable-zen-mode {
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  font-size: 10px;
+  padding: 10px;
+  font-weight: 500;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0s, opacity 0.5s;
+}
+[dir="ltr"] .excalidraw .layer-ui__wrapper .disable-zen-mode {
+  right: 15px;
+}
+[dir="rtl"] .excalidraw .layer-ui__wrapper .disable-zen-mode {
+  left: 15px;
+}
+.excalidraw .layer-ui__wrapper .disable-zen-mode--visible {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s linear 300ms, opacity 0.5s;
+  transition-delay: 0.8s;
+}
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-center {
+  pointer-events: none;
+}
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-center > * {
+  pointer-events: all;
+}
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-left,
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-right,
+.excalidraw .layer-ui__wrapper .disable-zen-mode--visible {
+  pointer-events: all;
+}
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-left {
+  margin-bottom: 0.2em;
+}
+.excalidraw .layer-ui__wrapper .layer-ui__wrapper__footer-right {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-inline-end: 1em;
+}
+
+/*# sourceMappingURL=LayerUI.css.map */

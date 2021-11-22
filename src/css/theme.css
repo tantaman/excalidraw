@@ -1,0 +1,77 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw {
+  --theme-filter: none;
+  --button-destructive-bg-color: #ffe3e3;
+  --button-destructive-color: #c92a2a;
+  --button-gray-1: #e9ecef;
+  --button-gray-2: #ced4da;
+  --button-gray-3: #adb5bd;
+  --button-special-active-bg-color: #ebfbee;
+  --dialog-border-color: #868e96;
+  --dropdown-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path d="M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>');
+  --focus-highlight-color: #a5d8ff;
+  --icon-fill-color: #000000;
+  --icon-green-fill-color: #2b8a3e;
+  --default-bg-color: #ffffff;
+  --input-bg-color: #ffffff;
+  --input-border-color: #ced4da;
+  --input-hover-bg-color: #f1f3f5;
+  --input-label-color: #495057;
+  --island-bg-color: rgba(255, 255, 255, 0.96);
+  --keybinding-color: #adb5bd;
+  --link-color: #1c7ed6;
+  --overlay-bg-color: rgba(255, 255, 255, 0.88);
+  --popup-bg-color: #ffffff;
+  --popup-secondary-bg-color: #f1f3f5;
+  --popup-text-color: #000000;
+  --popup-text-inverted-color: #ffffff;
+  --sab: env(safe-area-inset-bottom);
+  --sal: env(safe-area-inset-left);
+  --sar: env(safe-area-inset-right);
+  --sat: env(safe-area-inset-top);
+  --select-highlight-color: #339af0;
+  --shadow-island: 0 1px 5px rgba(0, 0, 0, 0.15);
+  --space-factor: 0.25rem;
+  --text-primary-color: #343a40;
+}
+.excalidraw.theme--dark {
+  background: #000000;
+}
+.excalidraw.theme--dark.theme--dark-background-none {
+  background: none;
+}
+.excalidraw.theme--dark {
+  --theme-filter: invert(93%) hue-rotate(180deg);
+  --button-destructive-bg-color: #5a0000;
+  --button-destructive-color: #ffa8a8;
+  --button-gray-1: #363636;
+  --button-gray-2: #272727;
+  --button-gray-3: #222;
+  --button-special-active-bg-color: #204624;
+  --dialog-border-color: #212529;
+  --dropdown-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="292.4" height="292.4" viewBox="0 0 292 292"><path fill="%23ced4da" d="M287 197L159 69c-4-3-8-5-13-5s-9 2-13 5L5 197c-3 4-5 8-5 13s2 9 5 13c4 4 8 5 13 5h256c5 0 9-1 13-5s5-8 5-13-1-9-5-13z"/></svg>');
+  --focus-highlight-color: #228be6;
+  --icon-fill-color: #ced4da;
+  --icon-green-fill-color: #69db7c;
+  --default-bg-color: #121212;
+  --input-bg-color: #121212;
+  --input-border-color: #2e2e2e;
+  --input-hover-bg-color: #181818;
+  --input-label-color: #e9ecef;
+  --island-bg-color: rgba(30, 30, 30, 0.98);
+  --keybinding-color: #868e96;
+  --link-color: #4dabf7;
+  --overlay-bg-color: rgba(52, 58, 64, 0.12);
+  --popup-bg-color: #2c2c2c;
+  --popup-secondary-bg-color: #222;
+  --popup-text-color: #ced4da;
+  --popup-text-inverted-color: #2c2c2c;
+  --select-highlight-color: #4dabf7;
+  --shadow-island: 0 1px 5px rgba(0, 0, 0, 0.3);
+  --text-primary-color: #ced4da;
+}
+
+/*# sourceMappingURL=theme.css.map */

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../css/variables.module.scss","ConfirmDialog.scss","../open-color/open-color.scss"],"names":[],"mappings":"AAUA;EACE;;;ACPE;EACE;EACA;EACA;;AAEF;EACE;EACA;EACA;;AAGF;EACE;EACA;;AAGF;EACE;;AAGF;EACE,kBCwCK;;ADtCL;EACE,kBCuCG;;ADpCL;EACE,OCrBW","file":"ConfirmDialog.css"}

@@ -1,0 +1,9 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .TextInput {
+  display: inline-block;
+}
+
+/*# sourceMappingURL=TextInput.css.map */

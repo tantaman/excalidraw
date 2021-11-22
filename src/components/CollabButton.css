@@ -1,0 +1,30 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .CollabButton.is-collaborating {
+  background-color: var(--button-special-active-bg-color);
+}
+.excalidraw .CollabButton.is-collaborating .ToolIcon__icon svg,
+.excalidraw .CollabButton.is-collaborating .ToolIcon__label {
+  color: var(--icon-green-fill-color);
+}
+.excalidraw .CollabButton-collaborators {
+  min-width: 1em;
+  position: absolute;
+  bottom: -5px;
+  padding: 3px;
+  border-radius: 50%;
+  background-color: #40c057;
+  color: #ffffff;
+  font-size: 0.7em;
+  font-family: var(--ui-font);
+}
+:root[dir="ltr"] .excalidraw .CollabButton-collaborators {
+  right: -5px;
+}
+:root[dir="rtl"] .excalidraw .CollabButton-collaborators {
+  left: -5px;
+}
+
+/*# sourceMappingURL=CollabButton.css.map */

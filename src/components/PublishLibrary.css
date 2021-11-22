@@ -1,0 +1,83 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .publish-library__fields {
+  display: flex;
+  flex-direction: column;
+}
+.excalidraw .publish-library__fields label {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.excalidraw .publish-library__fields label span {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #868e96;
+}
+.excalidraw .publish-library__fields label input,
+.excalidraw .publish-library__fields label textarea {
+  width: 70%;
+  padding: 0.6em;
+  font-family: var(--ui-font);
+}
+.excalidraw .publish-library__fields label .required {
+  color: #e03131;
+  margin: 0.2rem;
+}
+.excalidraw .publish-library__buttons {
+  display: flex;
+  padding: 0.2rem 0;
+  justify-content: flex-end;
+}
+.excalidraw .publish-library__buttons .ToolIcon__icon {
+  min-width: 2.5rem;
+  width: auto;
+  font-size: 1rem;
+}
+.excalidraw .publish-library__buttons .ToolIcon_type_button {
+  margin-left: 1rem;
+  padding: 0 0.5rem;
+}
+.excalidraw .publish-library__buttons--confirm.ToolIcon_type_button {
+  background-color: #228be6;
+}
+.excalidraw .publish-library__buttons--confirm.ToolIcon_type_button:hover {
+  background-color: #1971c2;
+}
+.excalidraw .publish-library__buttons--cancel.ToolIcon_type_button {
+  background-color: #adb5bd;
+}
+.excalidraw .publish-library__buttons--cancel.ToolIcon_type_button:hover {
+  background-color: #868e96;
+}
+.excalidraw .publish-library__buttons .ToolIcon__icon {
+  color: #ffffff;
+}
+.excalidraw .publish-library__buttons .ToolIcon__icon .Spinner {
+  --spinner-color: #fff;
+}
+.excalidraw .publish-library__buttons .ToolIcon__icon .Spinner svg {
+  padding: 0.5rem;
+}
+.excalidraw .publish-library .selected-library-items {
+  display: flex;
+  padding: 0 0.8rem;
+  flex-wrap: wrap;
+}
+.excalidraw
+  .publish-library
+  .selected-library-items
+  .single-library-item-wrapper {
+  width: 9rem;
+}
+.excalidraw .publish-library-note {
+  padding: 1em;
+  font-style: italic;
+  font-size: 14px;
+  display: block;
+}
+
+/*# sourceMappingURL=PublishLibrary.css.map */

@@ -1,0 +1,1 @@
+find . | grep scss | awk -F".scss" 'BEGIN { OFS=""} {print $1,".scss:",$1,".css"}' | xargs -n 1 -I {} sass {}

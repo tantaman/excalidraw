@@ -1,0 +1,41 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw-tooltip {
+  position: absolute;
+  z-index: 1000;
+  padding: 8px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  pointer-events: none;
+  word-wrap: break-word;
+  background: #000000;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  display: none;
+}
+.excalidraw-tooltip.excalidraw-tooltip--visible {
+  display: block;
+}
+
+.excalidraw-tooltip-wrapper {
+  display: flex;
+  height: 100%;
+}
+
+.excalidraw-tooltip-icon {
+  width: 0.9em;
+  height: 0.9em;
+  margin-left: 5px;
+  margin-top: 1px;
+  display: flex;
+}
+.excalidraw--mobile.excalidraw-tooltip-icon {
+  display: none;
+}
+
+/*# sourceMappingURL=Tooltip.css.map */

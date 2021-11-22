@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../css/variables.module.scss","Card.scss","../open-color/open-color.scss"],"names":[],"mappings":"AAUA;EACE;;;ACRA;EACE;EACA;EACA;EAEA;EAEA;EAEA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA,OCVa;;ADYb;EACE;EACA;;AAIJ;EACE;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;;AACA;EACE;;AAEF;EACE;;AAEF;EACE,OCrCW;;ADwCb;EACE","file":"Card.css"}

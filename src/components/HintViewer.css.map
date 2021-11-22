@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../css/variables.module.scss","HintViewer.scss","../open-color/open-color.scss"],"names":[],"mappings":"AAUA;EACE;;;ACLA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA,OCmBQ;EDlBR;;ADhBO;ECmBL;EACA;;;AAGF;EACE;EACA;EACA","file":"HintViewer.css"}

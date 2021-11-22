@@ -1,0 +1,22 @@
+.excalidraw .UserList {
+  pointer-events: none;
+  /*github corner*/
+  padding: var(--space-factor) var(--space-factor) var(--space-factor)
+    var(--space-factor);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.excalidraw .UserList > * {
+  pointer-events: all;
+  margin: 0 0 var(--space-factor) var(--space-factor);
+}
+.excalidraw .UserList_mobile {
+  padding: 0;
+  justify-content: normal;
+}
+.excalidraw .UserList_mobile > * {
+  margin: 0 var(--space-factor) var(--space-factor) 0;
+}
+
+/*# sourceMappingURL=UserList.css.map */

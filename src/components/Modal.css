@@ -1,0 +1,87 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw.excalidraw-modal-container {
+  position: absolute;
+  z-index: 10;
+}
+.excalidraw .Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: calc(var(--space-factor) * 10);
+}
+.excalidraw .Modal__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.excalidraw .Modal__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-width);
+  max-height: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: Modal__content_fade-in 0.1s ease-out 0.05s forwards;
+  position: relative;
+  overflow-y: auto;
+  background: var(--island-bg-color);
+  border: 1px solid var(--dialog-border-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+.excalidraw .Modal__content:focus {
+  outline: none;
+}
+.excalidraw--mobile.excalidraw .Modal__content {
+  max-width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+
+@keyframes Modal__content_fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.excalidraw .Modal__close {
+  width: calc(var(--space-factor) * 7);
+  height: calc(var(--space-factor) * 7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.excalidraw .Modal__close svg {
+  height: calc(var(--space-factor) * 5);
+}
+.excalidraw--mobile.excalidraw .Modal {
+  padding: 0;
+}
+.excalidraw--mobile.excalidraw .Modal__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=Modal.css.map */

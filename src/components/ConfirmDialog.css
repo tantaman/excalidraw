@@ -1,0 +1,32 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .confirm-dialog-buttons {
+  display: flex;
+  padding: 0.2rem 0;
+  justify-content: flex-end;
+}
+.excalidraw .confirm-dialog .ToolIcon__icon {
+  min-width: 2.5rem;
+  width: auto;
+  font-size: 1rem;
+}
+.excalidraw .confirm-dialog .ToolIcon_type_button {
+  margin-left: 0.8rem;
+  padding: 0 0.5rem;
+}
+.excalidraw .confirm-dialog__content {
+  font-size: 1rem;
+}
+.excalidraw .confirm-dialog--confirm.ToolIcon_type_button {
+  background-color: #fa5252;
+}
+.excalidraw .confirm-dialog--confirm.ToolIcon_type_button:hover {
+  background-color: #e03131;
+}
+.excalidraw .confirm-dialog--confirm.ToolIcon_type_button .ToolIcon__icon {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=ConfirmDialog.css.map */

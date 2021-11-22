@@ -1,0 +1,108 @@
+:export {
+  themeFilter: invert(93%) hue-rotate(180deg);
+}
+
+.excalidraw .library-unit {
+  align-items: center;
+  border: 1px solid var(--button-gray-2);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 63px;
+  height: 63px;
+}
+.excalidraw .library-unit--hover {
+  box-shadow: inset 0px 0px 0px 2px #339af0;
+  border-color: #339af0;
+}
+.excalidraw .library-unit--selected {
+  box-shadow: inset 0px 0px 0px 2px #1971c2;
+  border-color: #1971c2;
+}
+.excalidraw.theme--dark .library-unit {
+  border-color: #303030;
+}
+.excalidraw .library-unit__dragger {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.excalidraw .library-unit__dragger > svg {
+  filter: var(--theme-filter);
+  flex-grow: 1;
+  max-height: 100%;
+  max-width: 100%;
+}
+.excalidraw .library-unit__checkbox-container,
+.excalidraw .library-unit__checkbox-container:hover,
+.excalidraw .library-unit__checkbox-container:active {
+  align-items: center;
+  background: none;
+  border: none;
+  color: var(--icon-fill-color);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5rem;
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  cursor: pointer;
+}
+.excalidraw .library-unit__checkbox-container input,
+.excalidraw .library-unit__checkbox-container:hover input,
+.excalidraw .library-unit__checkbox-container:active input {
+  cursor: pointer;
+}
+.excalidraw .library-unit__checkbox {
+  position: absolute;
+  left: 2.3rem;
+  bottom: 2.3rem;
+}
+.excalidraw .library-unit__checkbox .Checkbox-box {
+  width: 13px;
+  height: 13px;
+  border-radius: 2px;
+  margin: 0.5em 0.5em 0.2em 0.2em;
+  background-color: #d0ebff;
+}
+.excalidraw .library-unit__checkbox.Checkbox:hover .Checkbox-box {
+  background-color: #a5d8ff;
+}
+.excalidraw .library-unit__removeFromLibrary > svg {
+  height: 16px;
+  width: 16px;
+}
+.excalidraw .library-unit__adder {
+  transform: scale(1);
+  animation: library-unit__adder-animation 1s ease-in infinite;
+}
+.excalidraw .library-unit__adder {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: -10px;
+  margin-top: -10px;
+  pointer-events: none;
+}
+.excalidraw .library-unit--hover .library-unit__adder {
+  color: #1c7ed6;
+}
+.excalidraw .library-unit__active {
+  cursor: pointer;
+}
+@keyframes library-unit__adder-animation {
+  0% {
+    transform: scale(0.85);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.85);
+  }
+}
+
+/*# sourceMappingURL=LibraryUnit.css.map */

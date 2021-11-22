@@ -1,0 +1,103 @@
+.excalidraw .library-menu-items-container .library-actions {
+  display: flex;
+}
+.excalidraw
+  .library-menu-items-container
+  .library-actions
+  button
+  .library-actions-counter {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  padding: 1px;
+  font-size: 0.7rem;
+  background: #fff;
+}
+.excalidraw .library-menu-items-container .library-actions--remove {
+  background-color: #f03e3e;
+}
+.excalidraw .library-menu-items-container .library-actions--remove:hover {
+  background-color: #e03131;
+}
+.excalidraw .library-menu-items-container .library-actions--remove:active {
+  background-color: #c92a2a;
+}
+.excalidraw .library-menu-items-container .library-actions--remove svg {
+  color: #ffffff;
+}
+.excalidraw
+  .library-menu-items-container
+  .library-actions--remove
+  .library-actions-counter {
+  color: #f03e3e;
+}
+.excalidraw .library-menu-items-container .library-actions--export {
+  background-color: #94d82d;
+}
+.excalidraw .library-menu-items-container .library-actions--export:hover {
+  background-color: #74b816;
+}
+.excalidraw .library-menu-items-container .library-actions--export:active {
+  background-color: #66a80f;
+}
+.excalidraw .library-menu-items-container .library-actions--export svg {
+  color: #ffffff;
+}
+.excalidraw
+  .library-menu-items-container
+  .library-actions--export
+  .library-actions-counter {
+  color: #94d82d;
+}
+.excalidraw .library-menu-items-container .library-actions--publish {
+  background-color: #15aabf;
+}
+.excalidraw .library-menu-items-container .library-actions--publish:hover {
+  background-color: #1098ad;
+}
+.excalidraw .library-menu-items-container .library-actions--publish:active {
+  background-color: #0b7285;
+}
+.excalidraw .library-menu-items-container .library-actions--publish svg {
+  color: #ffffff;
+}
+.excalidraw .library-menu-items-container .library-actions--publish label {
+  margin-left: -0.2em;
+  margin-right: 1.1em;
+  color: #ffffff;
+  font-size: 0.86em;
+}
+.excalidraw
+  .library-menu-items-container
+  .library-actions--publish
+  .library-actions-counter {
+  color: #15aabf;
+}
+.excalidraw .library-menu-items-container .library-actions--load {
+  background-color: #228be6;
+}
+.excalidraw .library-menu-items-container .library-actions--load:hover {
+  background-color: #1c7ed6;
+}
+.excalidraw .library-menu-items-container .library-actions--load:active {
+  background-color: #1864ab;
+}
+.excalidraw .library-menu-items-container .library-actions--load svg {
+  color: #ffffff;
+}
+.excalidraw .library-menu-items-container__items {
+  max-height: 50vh;
+  overflow: auto;
+  margin-top: 0.5rem;
+}
+.excalidraw .library-menu-items-container .separator {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0.6em 0.2em;
+  color: var(--text-primary-color);
+}
+
+/*# sourceMappingURL=LibraryMenuItems.css.map */
