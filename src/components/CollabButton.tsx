@@ -4,7 +4,7 @@ import { t } from "../i18n";
 import { useIsMobile } from "../components/App";
 import { users } from "./icons";
 
-import "./CollabButton.scss";
+import "./CollabButton.css";
 
 const CollabButton = ({
   isCollaborating,

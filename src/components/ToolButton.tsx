@@ -1,4 +1,4 @@
-import "./ToolIcon.scss";
+import "./ToolIcon.css";
 
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";

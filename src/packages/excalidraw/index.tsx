@@ -4,8 +4,8 @@ import "./publicPath";
 import { InitializeApp } from "../../components/InitializeApp";
 import App from "../../components/App";
 
-import "../../css/app.scss";
-import "../../css/styles.scss";
+import "../../css/app.css";
+import "../../css/styles.css";
 
 import { AppProps, ExcalidrawAPIRefValue, ExcalidrawProps } from "../../types";
 import { defaultLang } from "../../i18n";

@@ -1,7 +1,7 @@
 import React from "react";
 import { Popover } from "./Popover";
 
-import "./IconPicker.scss";
+import "./IconPicker.css";
 import { isArrowKey, KEYS } from "../keys";
 import { getLanguage } from "../i18n";
 

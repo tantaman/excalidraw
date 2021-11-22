@@ -2,7 +2,7 @@ import { trackEvent } from "../analytics";
 import { load, questionCircle, saveAs } from "../components/icons";
 import { ProjectName } from "../components/ProjectName";
 import { ToolButton } from "../components/ToolButton";
-import "../components/ToolIcon.scss";
+import "../components/ToolIcon.css";
 import { Tooltip } from "../components/Tooltip";
 import { DarkModeToggle } from "../components/DarkModeToggle";
 import { loadFromJSON, saveAsJSON } from "../data";

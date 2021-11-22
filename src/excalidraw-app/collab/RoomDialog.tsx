@@ -11,7 +11,7 @@ import {
 } from "../../components/icons";
 import { ToolButton } from "../../components/ToolButton";
 import { t } from "../../i18n";
-import "./RoomDialog.scss";
+import "./RoomDialog.css";
 import Stack from "../../components/Stack";
 import { AppState } from "../../types";
 

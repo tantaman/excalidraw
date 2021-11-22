@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { Popover } from "./Popover";
 import { t } from "../i18n";
 
-import "./ContextMenu.scss";
+import "./ContextMenu.css";
 import {
   getShortcutFromShortcutName,
   ShortcutName,

@@ -5,7 +5,7 @@ import { MIME_TYPES } from "../constants";
 import { useIsMobile } from "../components/App";
 import { exportToSvg } from "../scene/export";
 import { BinaryFiles, LibraryItem } from "../types";
-import "./LibraryUnit.scss";
+import "./LibraryUnit.css";
 import { CheckboxItem } from "./CheckboxItem";
 
 // fa-plus

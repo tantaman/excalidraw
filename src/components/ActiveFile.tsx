@@ -3,7 +3,7 @@ import { ToolButton } from "../components/ToolButton";
 import { save, file } from "../components/icons";
 import { t } from "../i18n";
 
-import "./ActiveFile.scss";
+import "./ActiveFile.css";
 
 type ActiveFileProps = {
   fileName?: string;

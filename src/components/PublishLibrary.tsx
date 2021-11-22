@@ -11,7 +11,7 @@ import { exportToBlob } from "../packages/utils";
 import { EXPORT_DATA_TYPES, EXPORT_SOURCE } from "../constants";
 import { ExportedLibraryData } from "../data/types";
 
-import "./PublishLibrary.scss";
+import "./PublishLibrary.css";
 import { ExcalidrawElement } from "../element/types";
 import { newElement } from "../element";
 import { mutateElement } from "../element/mutateElement";

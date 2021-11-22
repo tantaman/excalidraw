@@ -10,7 +10,7 @@ import { ToolButton } from "./ToolButton";
 import { actionSaveFileToDisk } from "../actions/actionExport";
 import { Card } from "./Card";
 
-import "./ExportDialog.scss";
+import "./ExportDialog.css";
 import { nativeFileSystemSupported } from "../data/filesystem";
 
 export type ExportCB = (

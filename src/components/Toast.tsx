@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 import { TOAST_TIMEOUT } from "../constants";
-import "./Toast.scss";
+import "./Toast.css";
 
 export const Toast = ({
   message,

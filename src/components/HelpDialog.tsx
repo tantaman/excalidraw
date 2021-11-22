@@ -3,7 +3,7 @@ import { t } from "../i18n";
 import { isDarwin, isWindows } from "../keys";
 import { Dialog } from "./Dialog";
 import { getShortcutKey } from "../utils";
-import "./HelpDialog.scss";
+import "./HelpDialog.css";
 
 const Header = () => (
   <div className="HelpDialog--header">

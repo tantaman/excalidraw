@@ -2,7 +2,7 @@ import { t } from "../i18n";
 import { Dialog, DialogProps } from "./Dialog";
 import { ToolButton } from "./ToolButton";
 
-import "./ConfirmDialog.scss";
+import "./ConfirmDialog.css";
 
 interface Props extends Omit<DialogProps, "onCloseRequest"> {
   onConfirm: () => void;

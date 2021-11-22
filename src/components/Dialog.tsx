@@ -4,7 +4,7 @@ import { useCallbackRefState } from "../hooks/useCallbackRefState";
 import { t } from "../i18n";
 import { useExcalidrawContainer, useIsMobile } from "../components/App";
 import { KEYS } from "../keys";
-import "./Dialog.scss";
+import "./Dialog.css";
 import { back, close } from "./icons";
 import { Island } from "./Island";
 import { Modal } from "./Modal";

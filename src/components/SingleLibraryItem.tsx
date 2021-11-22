@@ -5,7 +5,7 @@ import { exportToSvg } from "../packages/utils";
 import { AppState, LibraryItem } from "../types";
 import { close } from "./icons";
 
-import "./SingleLibraryItem.scss";
+import "./SingleLibraryItem.css";
 import { ToolButton } from "./ToolButton";
 
 const SingleLibraryItem = ({

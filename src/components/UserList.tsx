@@ -1,4 +1,4 @@
-import "./UserList.scss";
+import "./UserList.css";
 
 import React from "react";
 import clsx from "clsx";

@@ -14,7 +14,7 @@ import { Island } from "./Island";
 import PublishLibrary from "./PublishLibrary";
 import { ToolButton } from "./ToolButton";
 
-import "./LibraryMenu.scss";
+import "./LibraryMenu.css";
 import LibraryMenuItems from "./LibraryMenuItems";
 import { EVENT } from "../constants";
 import { KEYS } from "../keys";

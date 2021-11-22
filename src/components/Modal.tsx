@@ -1,4 +1,4 @@
-import "./Modal.scss";
+import "./Modal.css";
 
 import React, { useState, useLayoutEffect, useRef } from "react";
 import { createPortal } from "react-dom";
