@@ -452,6 +452,7 @@ class App extends React.Component<AppProps, AppState> {
           "excalidraw--view-mode": viewModeEnabled,
           "excalidraw--mobile": this.isMobile,
         })}
+        style={this.props.style}
         ref={this.excalidrawContainerRef}
         onDrop={this.handleAppOnDrop}
         tabIndex={0}
