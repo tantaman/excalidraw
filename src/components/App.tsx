@@ -322,6 +322,7 @@ class App extends React.Component<AppProps, AppState> {
       const api: ExcalidrawImperativeAPI = {
         ready: true,
         readyPromise,
+        actionManager: this.actionManager,
         switchShape: this.switchShape,
         setAppState: this.setAppState,
         updateScene: this.updateScene,
@@ -462,44 +463,6 @@ class App extends React.Component<AppProps, AppState> {
           value={this.excalidrawContainerValue}
         >
           <IsMobileContext.Provider value={this.isMobile}>
-            <LayerUI
-              canvas={this.canvas}
-              appState={this.state}
-              files={this.files}
-              setAppState={this.setAppState}
-              actionManager={this.actionManager}
-              elements={this.scene.getElements()}
-              onCollabButtonClick={onCollabButtonClick}
-              onLockToggle={this.toggleLock}
-              onInsertElements={(elements) =>
-                this.addElementsFromPasteOrLibrary({
-                  elements,
-                  position: "center",
-                  files: null,
-                })
-              }
-              zenModeEnabled={zenModeEnabled}
-              toggleZenMode={this.toggleZenMode}
-              langCode={getLanguage().code}
-              isCollaborating={this.props.isCollaborating || false}
-              renderTopRightUI={renderTopRightUI}
-              renderCustomFooter={renderFooter}
-              viewModeEnabled={viewModeEnabled}
-              showExitZenModeBtn={
-                typeof this.props?.zenModeEnabled === "undefined" &&
-                zenModeEnabled
-              }
-              showThemeBtn={
-                typeof this.props?.theme === "undefined" &&
-                this.props.UIOptions.canvasActions.theme
-              }
-              libraryReturnUrl={this.props.libraryReturnUrl}
-              UIOptions={this.props.UIOptions}
-              focusContainer={this.focusContainer}
-              library={this.library}
-              id={this.id}
-              onImageAction={this.onImageAction}
-            />
             <div className="excalidraw-textEditorContainer" />
             <div className="excalidraw-contextMenuContainer" />
             {this.state.showStats && (

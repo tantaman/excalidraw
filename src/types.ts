@@ -14,7 +14,7 @@ import {
   ExcalidrawImageElement,
   Theme,
 } from "./element/types";
-import { SHAPES } from "./shapes";
+import { Shapes, SHAPES } from "./shapes";
 import { Point as RoughPoint } from "roughjs/bin/geometry";
 import { LinearElementEditor } from "./element/linearElementEditor";
 import { SuggestedBinding } from "./element/binding";
@@ -29,6 +29,7 @@ import { MaybeTransformHandleType } from "./element/transformHandles";
 import Library from "./data/library";
 import type { FileSystemHandle } from "./data/filesystem";
 import type { ALLOWED_IMAGE_MIME_TYPES, MIME_TYPES } from "./constants";
+import { ActionManager } from "./actions/manager";
 
 export type Point = Readonly<RoughPoint>;
 
@@ -378,6 +379,8 @@ export type PointerDownState = Readonly<{
 export type ExcalidrawImperativeAPI = {
   updateScene: InstanceType<typeof App>["updateScene"];
   setAppState: (obj: any) => void;
+  actionManager: ActionManager;
+  switchShape: (value: Shapes, pointerType: PointerType) => void;
   resetScene: InstanceType<typeof App>["resetScene"];
   getSceneElementsIncludingDeleted: InstanceType<
     typeof App
