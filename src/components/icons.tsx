@@ -16,7 +16,7 @@ import { THEME } from "../constants";
 const activeElementColor = (theme: Theme) =>
   theme === THEME.LIGHT ? oc.orange[4] : oc.orange[9];
 const iconFillColor = (theme: Theme) =>
-  theme === THEME.LIGHT ? oc.black : oc.gray[4];
+  theme === THEME.LIGHT ? oc.gray[7] : oc.gray[4];
 const handlerColor = (theme: Theme) =>
   theme === THEME.LIGHT ? oc.white : "#1e1e1e";
 
@@ -579,7 +579,6 @@ export const StrokeWidthIcon = React.memo(
         stroke={iconFillColor(theme)}
         strokeWidth={strokeWidth}
         strokeLinecap="round"
-        fill="none"
       />,
       { width: 40, height: 20 },
     ),
