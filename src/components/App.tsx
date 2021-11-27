@@ -322,6 +322,7 @@ class App extends React.Component<AppProps, AppState> {
       const api: ExcalidrawImperativeAPI = {
         ready: true,
         readyPromise,
+        updateDOMRect: this.updateDOMRect,
         actionManager: this.actionManager,
         switchShape: this.switchShape,
         setAppState: this.setAppState,
@@ -4949,7 +4950,7 @@ class App extends React.Component<AppProps, AppState> {
     }
   }, 300);
 
-  private updateDOMRect = (cb?: () => void) => {
+  public updateDOMRect = (cb?: () => void) => {
     if (this.excalidrawContainerRef?.current) {
       const excalidrawContainer = this.excalidrawContainerRef.current;
       const {

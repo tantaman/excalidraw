@@ -380,6 +380,7 @@ export type PointerDownState = Readonly<{
 export type ExcalidrawImperativeAPI = {
   updateScene: InstanceType<typeof App>["updateScene"];
   setAppState: (obj: any) => void;
+  updateDOMRect: () => void;
   actionManager: ActionManager;
   switchShape: (value: Shapes, pointerType: PointerType) => void;
   resetScene: InstanceType<typeof App>["resetScene"];
