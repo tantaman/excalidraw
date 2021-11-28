@@ -667,12 +667,14 @@ class App extends React.Component<AppProps, AppState> {
     (opts?: {
       resetLoadingState: boolean;
       newElements?: readonly ExcalidrawElement[];
+      stateToKeep?: Partial<AppState>;
     }) => {
       this.scene.replaceAllElements(opts?.newElements || []);
       this.setState((state) => ({
         ...getDefaultAppState(),
         isLoading: opts?.resetLoadingState ? false : state.isLoading,
         theme: this.state.theme,
+        ...((opts?.stateToKeep || {}) as any),
       }));
       this.resetHistory();
     },
