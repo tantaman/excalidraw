@@ -80,7 +80,7 @@ const changeProperty = (
   });
 };
 
-const getFormValue = function <T>(
+export const getFormValue = function <T>(
   elements: readonly ExcalidrawElement[],
   appState: AppState,
   getAttribute: (element: ExcalidrawElement) => T,
