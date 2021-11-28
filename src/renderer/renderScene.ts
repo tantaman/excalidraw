@@ -183,7 +183,7 @@ export const renderScene = (
   sceneState: SceneState,
   // extra options passed to the renderer
   {
-    renderScrollbars = true,
+    renderScrollbars = false,
     renderSelection = true,
     // Whether to employ render optimizations to improve performance.
     // Should not be turned on for export operations and similar, because it
@@ -201,6 +201,7 @@ export const renderScene = (
     isExport?: boolean;
   } = {},
 ) => {
+  renderScrollbars = false;
   if (canvas === null) {
     return { atLeastOneVisibleElement: false };
   }
