@@ -64,7 +64,7 @@ import {
 import { hasStrokeColor } from "../scene/comparisons";
 import { register } from "./register";
 
-const changeProperty = (
+export const changeProperty = (
   elements: readonly ExcalidrawElement[],
   appState: AppState,
   callback: (element: ExcalidrawElement) => ExcalidrawElement,

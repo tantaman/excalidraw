@@ -87,12 +87,12 @@ export class ActionManager implements ActionsManagerInterface {
     return true;
   }
 
-  executeAction(action: Action) {
+  executeAction(action: Action, value: any = null) {
     this.updater(
       action.perform(
         this.getElementsIncludingDeleted(),
         this.getAppState(),
-        null,
+        value,
         this.app,
       ),
     );
@@ -114,14 +114,7 @@ export class ActionManager implements ActionsManagerInterface {
       const action = this.actions[name];
       const PanelComponent = action.PanelComponent!;
       const updateData = (formState?: any) => {
-        this.updater(
-          action.perform(
-            this.getElementsIncludingDeleted(),
-            this.getAppState(),
-            formState,
-            this.app,
-          ),
-        );
+        this.executeAction(action, formState);
       };
 
       return (
