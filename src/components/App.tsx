@@ -664,8 +664,11 @@ class App extends React.Component<AppProps, AppState> {
    * ! Do not use to clear scene user action !
    */
   private resetScene = withBatchedUpdates(
-    (opts?: { resetLoadingState: boolean }) => {
-      this.scene.replaceAllElements([]);
+    (opts?: {
+      resetLoadingState: boolean;
+      newElements?: readonly ExcalidrawElement[];
+    }) => {
+      this.scene.replaceAllElements(opts?.newElements || []);
       this.setState((state) => ({
         ...getDefaultAppState(),
         isLoading: opts?.resetLoadingState ? false : state.isLoading,
