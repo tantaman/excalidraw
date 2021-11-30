@@ -201,6 +201,7 @@ export const renderScene = (
     isExport?: boolean;
   } = {},
 ) => {
+  // TODOmlaw
   renderScrollbars = false;
   if (canvas === null) {
     return { atLeastOneVisibleElement: false };
