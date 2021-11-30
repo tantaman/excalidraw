@@ -1143,6 +1143,8 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   private onScroll = debounce(() => {
+    // TODO tant
+    return;
     const { offsetTop, offsetLeft } = this.getCanvasOffsets();
     this.setState((state) => {
       if (state.offsetLeft === offsetLeft && state.offsetTop === offsetTop) {
@@ -2570,6 +2572,7 @@ class App extends React.Component<AppProps, AppState> {
   private handleCanvasPanUsingWheelOrSpaceDrag = (
     event: React.PointerEvent<HTMLCanvasElement>,
   ): boolean => {
+    return false; // TODO tant
     if (
       !(
         gesture.pointers.size === 0 &&
@@ -4826,6 +4829,7 @@ class App extends React.Component<AppProps, AppState> {
   };
 
   private handleWheel = withBatchedUpdates((event: WheelEvent) => {
+    return; // TODO tant
     event.preventDefault();
 
     if (isPanning) {
