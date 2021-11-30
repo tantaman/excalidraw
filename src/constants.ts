@@ -1,4 +1,4 @@
-import cssVariables from "./css/variables.module.css";
+import * as cssVariables from "./css/variables.module.css";
 import { AppProps } from "./types";
 import { FontFamilyValues } from "./element/types";
 
