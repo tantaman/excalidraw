@@ -37,7 +37,7 @@ const keyBindings = [
   ["a", "s", "d", "f", "g"],
 ].flat();
 
-const Picker = ({
+export const Picker = ({
   colors,
   color,
   onChange,
