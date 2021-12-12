@@ -320,7 +320,7 @@ export const renderScene = (
     !appState.editingLinearElement
   ) {
     const selections = elements.reduce((acc, element) => {
-      const selectionColors = [];
+      const selectionColors: string[] = [];
       // local user
       if (
         appState.selectedElementIds[element.id] &&

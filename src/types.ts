@@ -30,6 +30,7 @@ import Library from "./data/library";
 import type { FileSystemHandle } from "./data/filesystem";
 import type { ALLOWED_IMAGE_MIME_TYPES, MIME_TYPES } from "./constants";
 import { ActionManager } from "./actions/manager";
+import { ForwardedRef } from "react";
 
 export type Point = Readonly<RoughPoint>;
 
@@ -215,7 +216,7 @@ export interface ExcalidrawProps {
     files: BinaryFiles,
   ) => void;
   initialData?: ImportedDataState | null | Promise<ImportedDataState | null>;
-  excalidrawRef?: ForwardRef<ExcalidrawAPIRefValue>;
+  excalidrawRef?: ForwardedRef<ExcalidrawAPIRefValue>;
   onCollabButtonClick?: () => void;
   isCollaborating?: boolean;
   onPointerUpdate?: (payload: {

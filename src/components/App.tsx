@@ -229,6 +229,7 @@ import {
 } from "../element/image";
 import throttle from "lodash.throttle";
 import { fileOpen, nativeFileSystemSupported } from "../data/filesystem";
+import { ImportedDataState } from "../data/types";
 
 const IsMobileContext = React.createContext(false);
 export const useIsMobile = () => useContext(IsMobileContext);
@@ -715,7 +716,7 @@ class App extends React.Component<AppProps, AppState> {
     if (!this.state.isLoading) {
       this.setState({ isLoading: true });
     }
-    let initialData = null;
+    let initialData: ImportedDataState | null = null;
     try {
       initialData = (await this.props.initialData) || null;
       if (initialData?.libraryItems) {
@@ -802,6 +803,7 @@ class App extends React.Component<AppProps, AppState> {
         setState: {
           configurable: true,
           value: (...args: Parameters<typeof setState>) => {
+            // @ts-ignore
             return this.setState(...args);
           },
         },
@@ -3404,8 +3406,8 @@ class App extends React.Component<AppProps, AppState> {
 
             pointerDownState.hit.hasBeenDuplicated = true;
 
-            const nextElements = [];
-            const elementsToAppend = [];
+            const nextElements: ExcalidrawElement[] = [];
+            const elementsToAppend: ExcalidrawElement[] = [];
             const groupIdMap = new Map();
             const oldIdToDuplicatedId = new Map();
             const hitElement = pointerDownState.hit.element;

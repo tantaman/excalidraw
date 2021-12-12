@@ -62,7 +62,7 @@ class Library {
       library,
       defaultStatus as "published" | "unpublished",
     );
-    const filteredItems = [];
+    const filteredItems: LibraryItem[] = [];
     for (const item of restoredLibItems) {
       const restoredItem = this.restoreLibraryItem(item as LibraryItem);
       if (restoredItem && isUniqueitem(existingLibraryItems, restoredItem)) {

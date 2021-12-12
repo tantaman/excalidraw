@@ -1,6 +1,6 @@
 import "./Stack.css";
 
-import React from "react";
+import React, { ReactText } from "react";
 import clsx from "clsx";
 
 type StackProps = {
@@ -28,7 +28,7 @@ const RowStack = ({
         alignItems: align,
         justifyContent,
         ...style,
-      }}
+      } as React.CSSProperties}
     >
       {children}
     </div>
@@ -49,7 +49,7 @@ const ColStack = ({
         "--gap": gap,
         justifyItems: align,
         justifyContent,
-      }}
+      } as React.CSSProperties}
     >
       {children}
     </div>

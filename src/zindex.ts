@@ -15,7 +15,7 @@ const getIndicesToMove = (
 ) => {
   let selectedIndices: number[] = [];
   let deletedIndices: number[] = [];
-  let includeDeletedIndex = null;
+  let includeDeletedIndex: number | null = null;
   let index = -1;
   while (++index < elements.length) {
     if (appState.selectedElementIds[elements[index].id]) {

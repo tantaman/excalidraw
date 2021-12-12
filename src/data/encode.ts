@@ -230,7 +230,7 @@ const concatBuffers = (...buffers: Uint8Array[]) => {
 
 /** can only be used on buffers created via `concatBuffers()` */
 const splitBuffers = (concatenatedBuffer: Uint8Array) => {
-  const buffers = [];
+  const buffers: Uint8Array[] = [];
 
   let cursor = 0;
 

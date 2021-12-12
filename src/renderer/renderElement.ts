@@ -44,7 +44,7 @@ const isPendingImageElement = (
   sceneState: SceneState,
 ) =>
   isInitializedImageElement(element) &&
-  !sceneState.imageCache.has(element.fileId);
+  !sceneState.imageCache.has((element as any).fileId);
 
 const getDashArrayDashed = (strokeWidth: number) => [8, 8 + strokeWidth];
 
@@ -127,7 +127,7 @@ const generateElementCanvas = (
     sceneState.theme === "dark" &&
     isInitializedImageElement(element) &&
     !isPendingImageElement(element, sceneState) &&
-    sceneState.imageCache.get(element.fileId)?.mimeType !== MIME_TYPES.svg
+    sceneState.imageCache.get((element as any).fileId)?.mimeType !== MIME_TYPES.svg
   ) {
     context.filter = IMAGE_INVERT_FILTER;
   }
@@ -222,7 +222,7 @@ const drawElementOnCanvas = (
     }
     case "image": {
       const img = isInitializedImageElement(element)
-        ? sceneState.imageCache.get(element.fileId)?.image
+        ? element.fileId && sceneState.imageCache.get(element.fileId)?.image
         : undefined;
       if (img != null && !(img instanceof Promise)) {
         context.drawImage(
@@ -843,7 +843,7 @@ export const renderElementToSvg = (
     }
     case "image": {
       const fileData =
-        isInitializedImageElement(element) && files[element.fileId];
+        isInitializedImageElement(element) && element.fileId && files[element.fileId];
       if (fileData) {
         const symbolId = `image-${fileData.id}`;
         let symbol = svgRoot.querySelector(`#${symbolId}`);

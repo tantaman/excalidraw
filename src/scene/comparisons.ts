@@ -39,7 +39,7 @@ export const getElementAtPosition = (
   elements: readonly NonDeletedExcalidrawElement[],
   isAtPositionFn: (element: NonDeletedExcalidrawElement) => boolean,
 ) => {
-  let hitElement = null;
+  let hitElement: ExcalidrawElement | null = null;
   // We need to to hit testing from front (end of the array) to back (beginning of the array)
   // because array is ordered from lower z-index to highest and we want element z-index
   // with higher z-index
@@ -73,7 +73,7 @@ export const getElementContainingPosition = (
   x: number,
   y: number,
 ) => {
-  let hitElement = null;
+  let hitElement: null | ExcalidrawElement = null;
   // We need to to hit testing from front (end of the array) to back (beginning of the array)
   for (let index = elements.length - 1; index >= 0; --index) {
     if (elements[index].isDeleted) {

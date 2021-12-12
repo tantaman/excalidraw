@@ -384,7 +384,7 @@ const chartTypeLine = (
   const backgroundColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
   let index = 0;
-  const points = [];
+  const points: [number, number][] = [];
   for (const value of spreadsheet.values) {
     const cx = index * (BAR_WIDTH + BAR_GAP);
     const cy = -(value / max) * BAR_HEIGHT;
