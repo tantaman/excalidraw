@@ -62,6 +62,7 @@ import {
   isSomeElementSelected,
 } from "../scene";
 import { hasStrokeColor } from "../scene/comparisons";
+import Scene from "../scene/Scene";
 import { register } from "./register";
 
 export const changeProperty = (
@@ -432,7 +433,11 @@ export const actionChangeFontSize = register({
           const element: ExcalidrawTextElement = newElementWith(el, {
             fontSize: value,
           });
-          redrawTextBoundingBox(element);
+          let container = null;
+          if (el.containerId) {
+            container = Scene.getScene(el)!.getElement(el.containerId);
+          }
+          redrawTextBoundingBox(element, container);
           return element;
         }
 
@@ -493,7 +498,11 @@ export const actionChangeFontFamily = register({
           const element: ExcalidrawTextElement = newElementWith(el, {
             fontFamily: value,
           });
-          redrawTextBoundingBox(element);
+          let container = null;
+          if (el.containerId) {
+            container = Scene.getScene(el)!.getElement(el.containerId);
+          }
+          redrawTextBoundingBox(element, container);
           return element;
         }
 
@@ -557,7 +566,11 @@ export const actionChangeTextAlign = register({
           const element: ExcalidrawTextElement = newElementWith(el, {
             textAlign: value,
           });
-          redrawTextBoundingBox(element);
+          let container = null;
+          if (el.containerId) {
+            container = Scene.getScene(el)!.getElement(el.containerId);
+          }
+          redrawTextBoundingBox(element, container);
           return element;
         }
 

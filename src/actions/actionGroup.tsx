@@ -1,7 +1,7 @@
 import React from "react";
 import { CODES, KEYS } from "../keys";
 import { t } from "../i18n";
-import { getShortcutKey } from "../utils";
+import { arrayToMap, getShortcutKey } from "../utils";
 import { register } from "./register";
 import { UngroupIcon, GroupIcon } from "../components/icons";
 import { newElementWith } from "../element/mutateElement";
@@ -45,6 +45,7 @@ const enableActionGroup = (
   const selectedElements = getSelectedElements(
     getNonDeletedElements(elements),
     appState,
+    true,
   );
   return (
     selectedElements.length >= 2 && !allElementsInSameGroup(selectedElements)
@@ -57,6 +58,7 @@ export const actionGroup = register({
     const selectedElements = getSelectedElements(
       getNonDeletedElements(elements),
       appState,
+      true,
     );
     if (selectedElements.length < 2) {
       // nothing to group
@@ -84,8 +86,9 @@ export const actionGroup = register({
       }
     }
     const newGroupId = randomId();
+    const selectElementIds = arrayToMap(selectedElements);
     const updatedElements = elements.map((element) => {
-      if (!appState.selectedElementIds[element.id]) {
+      if (!selectElementIds.get(element.id)) {
         return element;
       }
       return newElementWith(element, {
