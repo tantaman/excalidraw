@@ -183,18 +183,18 @@ export const renderScene = (
   renderConfig: RenderConfig,
   // extra options passed to the renderer
 ) => {
-  // TODO tant
-  // renderScrollbars = false;
   if (canvas === null) {
     return { atLeastOneVisibleElement: false };
   }
 
-  const {
-    renderScrollbars = true,
+  let {
+    renderScrollbars = false,
     renderSelection = true,
     renderGrid = true,
     isExporting,
   } = renderConfig;
+  // TODO tant
+  renderScrollbars = false;
 
   const context = canvas.getContext("2d")!;
 

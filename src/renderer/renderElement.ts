@@ -128,16 +128,7 @@ const generateElementCanvas = (
   const rc = rough.canvas(canvas);
 
   // in dark theme, revert the image color filter
-<<<<<<< HEAD
-  if (
-    sceneState.theme === "dark" &&
-    isInitializedImageElement(element) &&
-    !isPendingImageElement(element, sceneState) &&
-    sceneState.imageCache.get((element as any).fileId)?.mimeType !== MIME_TYPES.svg
-  ) {
-=======
   if (shouldResetImageFilter(element, renderConfig)) {
->>>>>>> master
     context.filter = IMAGE_INVERT_FILTER;
   }
 
@@ -231,11 +222,7 @@ const drawElementOnCanvas = (
     }
     case "image": {
       const img = isInitializedImageElement(element)
-<<<<<<< HEAD
-        ? element.fileId && sceneState.imageCache.get(element.fileId)?.image
-=======
         ? renderConfig.imageCache.get(element.fileId)?.image
->>>>>>> master
         : undefined;
       if (img != null && !(img instanceof Promise)) {
         context.drawImage(
