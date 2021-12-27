@@ -263,7 +263,7 @@ export const resizeImageFile = async (
 
   if (opts.outputType) {
     const { outputType } = opts;
-    reduce._create_blob = function (env) {
+    (reduce as any)._create_blob = function (env) {
       return this.pica.toBlob(env.out_canvas, outputType, 0.8).then((blob) => {
         env.out_blob = blob;
         return env;

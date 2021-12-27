@@ -433,7 +433,7 @@ export const actionChangeFontSize = register({
           const element: ExcalidrawTextElement = newElementWith(el, {
             fontSize: value,
           });
-          let container = null;
+          let container: ExcalidrawElement | null = null;
           if (el.containerId) {
             container = Scene.getScene(el)!.getElement(el.containerId);
           }
@@ -498,7 +498,7 @@ export const actionChangeFontFamily = register({
           const element: ExcalidrawTextElement = newElementWith(el, {
             fontFamily: value,
           });
-          let container = null;
+          let container: ExcalidrawElement | null = null;
           if (el.containerId) {
             container = Scene.getScene(el)!.getElement(el.containerId);
           }
@@ -566,7 +566,7 @@ export const actionChangeTextAlign = register({
           const element: ExcalidrawTextElement = newElementWith(el, {
             textAlign: value,
           });
-          let container = null;
+          let container: ExcalidrawElement | null = null;
           if (el.containerId) {
             container = Scene.getScene(el)!.getElement(el.containerId);
           }

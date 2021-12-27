@@ -14,7 +14,7 @@ import {
 } from "../constants";
 import Scene from "../scene/Scene";
 import { isBoundToContainer } from "../element/typeChecks";
-import { ExcalidrawTextElement } from "../element/types";
+import { ExcalidrawElement, ExcalidrawTextElement } from "../element/types";
 
 // `copiedStyles` is exported only for tests.
 export let copiedStyles: string = "{}";
@@ -64,7 +64,7 @@ export const actionPasteStyles = register({
               fontFamily: pastedElement?.fontFamily || DEFAULT_FONT_FAMILY,
               textAlign: pastedElement?.textAlign || DEFAULT_TEXT_ALIGN,
             });
-            let container = null;
+            let container: ExcalidrawElement | null = null;
 
             if (isBoundToContainer(element)) {
               container = Scene.getScene(element)!.getElement(
