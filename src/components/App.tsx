@@ -211,7 +211,6 @@ import {
   withBatchedUpdates,
 } from "../utils";
 import ContextMenu, { ContextMenuOption } from "./ContextMenu";
-import LayerUI from "./LayerUI";
 import { Stats } from "./Stats";
 import { Toast } from "./Toast";
 import { actionToggleViewMode } from "../actions/actionToggleViewMode";
